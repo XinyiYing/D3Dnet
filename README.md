@@ -8,9 +8,9 @@ Code will be release soon.
 
 Figure 1. An illustration of deformable 3D convolution network (D3Dnet). 
 
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/D3D.jpg" width="1100" height="600" />
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/D3D.jpg" width="1100" height="450" />
 
-Figure 2. Toy example of deformable 3D convolution (D3D).
+Figure 2. Deformable 3D convolution (D3D).
 ## Results
 ### Quantitative Results
 Table 1. PSNR/SSIM achieved by different methods.
@@ -19,7 +19,7 @@ Table 1. PSNR/SSIM achieved by different methods.
 
 Table 2. T-MOVIE and MOVIE achieved by different methods.
 
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG" width="400" height="80" />
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG" width="400" height="60" />
 
 ### Qualitative Results
 <img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/compare.jpg>
