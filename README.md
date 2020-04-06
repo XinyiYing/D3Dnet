@@ -13,9 +13,11 @@ Figure 2. Toy example of deformable 3D convolution (D3D).
 ## Results
 ### Quantitative Results
 Table 1. PSNR/SSIM achieved by different methods.
+
 <img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.jpg>
 
 Table 2. T-MOVIE and MOVIE achieved by different methods.
+
 <img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.jpg>
 
 ### Qualitative Results
