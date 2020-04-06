@@ -4,7 +4,7 @@ Pytorch implementation of "[Deformable 3D Convolution for Video Super-Resolution
 Code will be release soon.
 
 ## Overview
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="700" height="300" />
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="500" height="300" />
 
 Figure 1. An illustration of deformable 3D convolution network (D3Dnet). (a) The overall framework. (b) The residual deformable 3D convolution (resD3D) block for simultaneous appearance and motion modeling. (c) The residual block for the reconstruction of SR results.
 
@@ -20,7 +20,7 @@ Table 1. PSNR/SSIM achieved by different methods.
 
 Table 2. T-MOVIE and MOVIE achieved by different methods.
 
-<img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG, width="200" height="100">
+<img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG, width="200" height="100" />
 
 ### Qualitative Results
 <img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/compare.jpg>
