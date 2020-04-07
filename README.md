@@ -1,7 +1,7 @@
 # Deformable 3D Convolution for Video Super-Resolution
 Pytorch implementation of "[Deformable 3D Convolution for Video Super-Resolution](https://arxiv.org/pdf/2004.02803.pdf)"
 
-Code will be release soon.
+Code will be released soon.
 
 ## Overview
 <img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="550" height="300" />
