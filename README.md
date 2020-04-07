@@ -17,7 +17,7 @@ Table 1. PSNR/SSIM achieved by different methods.
 
 <img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.JPG>
 
-Table 2. T-MOVIE and MOVIE achieved by different methods.
+Table 2. [T-MOVIE and MOVIE](https://github.com/XinyiYing/MOVIE) achieved by different methods.
 
 <img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG" width="400" height="60" />
 
