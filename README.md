@@ -3,6 +3,15 @@ Pytorch implementation of "[Deformable 3D Convolution for Video Super-Resolution
 
 Code will be released soon.
 
+```
+@Article{ying2020deformable,
+  author    = {Xinyi Ying, Longguang Wang, Yingqian Wang, Weidong Sheng, Wei An, Yulan Guo},
+  title     = {Deformable 3D Convolution for Video Super-Resolution},
+  journal   = {arXiv preprint arXiv:2004.02803},
+  year      = {2020},
+}
+```
+
 ## Overview
 <img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="550" height="300" />
 
