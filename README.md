@@ -1,6 +1,8 @@
 # Deformable 3D Convolution for Video Super-Resolution
 Pytorch implementation of "[Deformable 3D Convolution for Video Super-Resolution](https://arxiv.org/pdf/2004.02803.pdf)"
 
+Our code is based on cuda and can perform deformation in any dimension of 3D convolution.
+
 Code will be released soon.
 
 ```
