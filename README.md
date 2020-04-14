@@ -29,12 +29,12 @@ Qualitative results achieved by different methods. Blue boxes represent the temp
 
 ## Citiation
 ```
-@article{D3Dnet,<br>
-  author={Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},<br>
-  title={Deformable 3D Convolution for Video Super-Resolution},<br>
-  journal = {arXiv preprint arXiv:2004.02803},<br>
-  year    = {2020},<br>
-}<br>
+@article{D3Dnet,
+  author={Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
+  title={Deformable 3D Convolution for Video Super-Resolution},
+  journal = {arXiv preprint arXiv:2004.02803},
+  year    = {2020},
+}
 ```
 ## Contact
 Please contact us at ***yingxinyi18@nudt.edu.cn*** for any question.
