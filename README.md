@@ -33,7 +33,7 @@ Qualitative results achieved by different methods. Blue boxes represent the temp
   author={Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
   title={Deformable 3D Convolution for Video Super-Resolution},
   journal = {arXiv preprint arXiv:2004.02803},
-  year    = {2020},
+  year = {2020},
 }
 ```
 ## Contact
