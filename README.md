@@ -29,12 +29,11 @@ Qualitative results achieved by different methods. Blue boxes represent the temp
 
 ## Citiation
 ```
-@article{SAM,<br>
-  title={A Stereo Attention Module for Stereo Image Super-Resolution},<br>
-  author={Ying, Xinyi and Wang, Yingqian and Wang, Longguang and Sheng, Weidong and An, Wei and Guo, Yulan},<br>
-  journal={IEEE Signal Processing Letters},<br>
-  year={2020},<br>
-  publisher={IEEE}<br>
+@article{D3Dnet,<br>
+  author={Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},<br>
+  title={Deformable 3D Convolution for Video Super-Resolution},<br>
+  journal = {arXiv preprint arXiv:2004.02803},<br>
+  year    = {2020},<br>
 }<br>
 ```
 ## Contact
