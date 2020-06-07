@@ -27,6 +27,8 @@ We have organized the Matlab code framework of Video Quality Assessment metric T
 <img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/compare.jpg>
 Qualitative results achieved by different methods. Blue boxes represent the temporal profiles among different frames.
 
+![video](https://github.com/XinyiYing/D3Dnet/tree/master/images/video.gif)
+
 ## Citiation
 ```
 @article{D3Dnet,
