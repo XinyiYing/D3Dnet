@@ -73,7 +73,7 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 ### Quantitative Results
 Table 1. PSNR/SSIM achieved by different methods.
 
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.JPG" width="1100" height="230" />
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.JPG" width="1100" height="180" />
 
 Table 2. Temporal consistency and computational efficiency achieved by different methods.
 
