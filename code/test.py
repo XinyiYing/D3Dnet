@@ -15,7 +15,7 @@ parser.add_argument("--test_dataset_dir", default='./data', type=str, help="test
 parser.add_argument("--model", default='./log/D3Dnet.pth.tar', type=str, help="checkpoint")
 parser.add_argument("--inType", type=str, default='y', help="RGB input or y input")
 parser.add_argument("--batchSize", type=int, default=1, help="Test batch size")
-parser.add_argument("--gpu", type=int, default=1, help="Test batch size")
+parser.add_argument("--gpu", type=int, default=0, help="Test batch size")
 parser.add_argument("--datasets", type=str, default=['Vid4','SPMC-11','Vimeo'], help="Test batch size")
 
 global opt, model
