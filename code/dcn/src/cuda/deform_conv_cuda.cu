@@ -12,8 +12,7 @@
 
 // extern THCState *state;
 
-// author: Charles Shang
-// https://github.com/torch/cunn/blob/master/lib/THCUNN/generic/SpatialConvolutionMM.cu
+// modified from https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/blob/pytorch_1.0.0/src/cuda/deform_conv_cuda.cu
 
 
 at::Tensor
@@ -39,7 +38,6 @@ deform_conv_cuda_forward(const at::Tensor &input,
 {
     // THCAssertSameGPU(THCudaTensor_checkGPU(state, 5, input, weight, bias, offset, mask));
     
-    //报错提醒
     AT_ASSERTM(input.is_contiguous(), "input tensor has to be contiguous");
     AT_ASSERTM(weight.is_contiguous(), "weight tensor has to be contiguous");
 
@@ -60,7 +58,6 @@ deform_conv_cuda_forward(const at::Tensor &input,
     const int kernel_h_ = weight.size(3);
     const int kernel_w_ = weight.size(4);
 
-    //调用标准函数库std::<函数>
     const int im2col_step_ = std::min(batch, im2col_step);
 
     AT_ASSERTM(batch % im2col_step_ == 0, "batch(%d) must divide im2col_step(%d)", batch, im2col_step_);
