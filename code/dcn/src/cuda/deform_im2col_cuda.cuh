@@ -9,6 +9,9 @@
 #include <THC/THCAtomics.cuh>
 // #include <THC/THCDeviceUtils.cuh>
 
+// modified from https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/blob/pytorch_1.0.0/src/cuda/deform_im2col_cuda.cuh
+
+
 #define CUDA_KERNEL_LOOP(i, n)                          \
   for (int i = blockIdx.x * blockDim.x + threadIdx.x;   \
       i < (n);                                          \
