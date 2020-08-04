@@ -19,9 +19,9 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 
 ## Build
 ***Compile deformable 3D convolution***: <br>
-1. Cd to ```code/dcn```
-2. For Windows users, run  ```cmd make.bat``` For Linux user, run ```bash make.sh``` The scripts will build D3D automatically and create some folders.
-3. See test.py for example usage.
+1. Cd to ```code/dcn```.
+2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build D3D automatically and create some folders.
+3. See `test.py` for example usage.
 
 ## Datasets
 
@@ -98,6 +98,10 @@ A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dn
   year = {2020},
 }
 ```
+
+## Acknowledgement
+This code is built on [[DCNv2]](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0) and [[SOF-VSR]](https://github.com/LongguangWang/SOF-VSR). We thank the authors for sharing their codes.
+
 ## Contact
 Please contact us at ***yingxinyi18@nudt.edu.cn*** for any question.
 
