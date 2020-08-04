@@ -13,7 +13,7 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 
 ## Requirements
 - Python 3
-- pytorch (1.2.0), torchvision (0.4.0)
+- pytorch (1.0.0), torchvision (0.4.0)
 - numpy, PIL
 - Visual Studio 2015
 
