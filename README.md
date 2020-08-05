@@ -1,8 +1,6 @@
 # Deformable 3D Convolution for Video Super-Resolution
 Pytorch implementation of deformable 3D convolution network (D3Dnet). [<a href="https://arxiv.org/pdf/2004.02803.pdf">PDF</a>] <br><br>
 
-Our code is based on cuda and can perform deformation in any dimension of 3D convolution.
-
 ## Overview
 
 ### Architecture of D3Dnet
@@ -94,7 +92,7 @@ A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dn
 @article{D3Dnet,
   author = {Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
   title = {Deformable 3D Convolution for Video Super-Resolution},
-  journal = {arXiv preprint arXiv:2004.02803},
+  journal = {IEEE Signal Processing Letters},
   year = {2020},
 }
 ```
