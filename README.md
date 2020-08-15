@@ -6,10 +6,10 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 ## Overview
 
 ### Architecture of D3Dnet
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="550" height="380" /><br>
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="550"/><br>
 
 ### Architecture of D3D
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/D3D.jpg" width="1100" height="450" /><br>
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/D3D.jpg" width="1100"/><br>
 
 ## Requirements
 - Python 3
@@ -73,7 +73,7 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 ### Quantitative Results
 Table 1. PSNR/SSIM achieved by different methods.
 
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.JPG" width="1100" height="150" />
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.JPG" width="1100" />
 
 Table 2. Temporal consistency and computational efficiency achieved by different methods.
 
