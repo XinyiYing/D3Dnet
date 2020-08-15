@@ -77,7 +77,7 @@ Table 1. PSNR/SSIM achieved by different methods.
 
 Table 2. Temporal consistency and computational efficiency achieved by different methods.
 
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG" width="550" height="300" />
+<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG" width="550"/>
 
 We have organized the Matlab code framework of Video Quality Assessment metric T-MOVIE and MOVIE. [<a href="https://github.com/XinyiYing/MOVIE">Code</a>] <br> Welcome to have a look and use our code.
 
