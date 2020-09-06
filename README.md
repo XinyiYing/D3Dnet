@@ -95,6 +95,8 @@ A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dn
   author = {Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
   title = {Deformable 3D Convolution for Video Super-Resolution},
   journal = {IEEE Signal Processing Letters},
+  volume = {27},
+  pages = {1500-1504},
   year = {2020},
 }
 ```
