@@ -143,9 +143,10 @@ class DeformConv_d(nn.Module):
         dimension_T = 'T' in self.dimension
         dimension_H = 'H' in self.dimension
         dimension_W = 'W' in self.dimension
+        b, c, t, h, w = temp.shape
         if self.length == 2:
-            b, c, t, h, w = temp.shape
-            offset = temp.clone().resize_(b, 81, t, h, w)
+            temp1 = temp.clone()[:, 0:81 - c, :, :, :]
+            offset = torch.cat((temp.clone(), temp1), dim=1)
             if dimension_T == False:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
@@ -166,6 +167,8 @@ class DeformConv_d(nn.Module):
                     offset[:, i * 3 + 2, :, :, :] = 0  # W
 
         if self.length == 1:
+            temp1 = temp.clone()
+            offset = torch.cat((temp.clone(), temp1, temp1), dim=1)
             if dimension_T == True:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
@@ -229,9 +232,9 @@ class DeformConvPack_d(DeformConv_d):
         dimension_H = 'H' in self.dimension
         dimension_W = 'W' in self.dimension
         b, c, t, h, w = temp.shape
-        temp1 = temp.clone()[:,0:81-c,:,:,:]
-        offset = torch.cat((temp.clone(),temp1),dim=1)
         if self.length == 2:
+            temp1 = temp.clone()[:, 0:81 - c, :, :, :]
+            offset = torch.cat((temp.clone(), temp1), dim=1)
             if dimension_T == False:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
@@ -252,6 +255,8 @@ class DeformConvPack_d(DeformConv_d):
                     offset[:, i * 3 + 2, :, :, :] = 0  # W
 
         if self.length == 1:
+            temp1 = temp.clone()
+            offset = torch.cat((temp.clone(), temp1, temp1), dim=1)
             if dimension_T == True:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
