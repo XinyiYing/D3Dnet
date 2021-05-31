@@ -126,6 +126,41 @@ class TestSetLoader(Dataset):
     def __len__(self):
         return len(self.img_list)
 
+class InferLoader(Dataset):
+
+    def __init__(self, dataset_dir, scale_factor):
+        super(InferLoader).__init__()
+        self.dataset_dir = dataset_dir
+        self.upscale_factor = scale_factor
+        self.img_list = os.listdir(self.dataset_dir + '/lr_x4')
+        self.totensor = transforms.ToTensor()
+    def __getitem__(self, idx):
+        HR = []
+        LR = []
+        for idx_frame in range(idx - 3, idx + 4):
+            if idx_frame < 0:
+                idx_frame = 0
+            if idx_frame > len(self.img_list) - 1:
+                idx_frame = len(self.img_list) - 1
+            img_LR_o = Image.open(self.dataset_dir + '/lr_x4/lr_' + str(idx_frame + 1).rjust(2, '0') + '.png')
+            img_LR = np.array(img_LR_o, dtype=np.float32) / 255.0
+            if idx_frame == idx:
+                h, w, c = img_LR.shape
+                SR_buicbic = np.array(img_LR_o.resize((w*self.upscale_factor, h*self.upscale_factor), Image.BICUBIC), dtype=np.float32) / 255.0
+                SR_buicbic = rgb2ycbcr(SR_buicbic, only_y=False).transpose(2, 0, 1)
+            img_LR = rgb2ycbcr(img_LR, only_y=True)[np.newaxis,:]
+
+            LR.append(img_LR)
+        LR = np.stack(LR, 1)
+
+
+        LR = torch.from_numpy(np.ascontiguousarray(LR))
+        SR_buicbic = torch.from_numpy(np.ascontiguousarray(SR_buicbic))
+        return LR, SR_buicbic
+
+    def __len__(self):
+        return len(self.img_list)
+
 class TestSetLoader_Vimeo(Dataset):
     def __init__(self, dataset_dir, video_name, scale_factor, inType='y'):
         super(TestSetLoader).__init__()
