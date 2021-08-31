@@ -10,7 +10,7 @@ from torch.autograd import Function
 from torch.nn.modules.utils import _triple
 from torch.autograd.function import once_differentiable
 
-import DCN
+import D3D
 
 class DeformConvFunction(Function):
     @staticmethod
@@ -23,7 +23,7 @@ class DeformConvFunction(Function):
         ctx.group = group
         ctx.deformable_groups = deformable_groups
         ctx.im2col_step = im2col_step
-        output = DCN.deform_conv_forward(input, weight, bias,
+        output = D3D.deform_conv_forward(input, weight, bias,
                                          offset,
                                          ctx.kernel_size[0], ctx.kernel_size[1],ctx.kernel_size[2],
                                          ctx.stride[0], ctx.stride[1],ctx.stride[2],
@@ -40,7 +40,7 @@ class DeformConvFunction(Function):
     def backward(ctx, grad_output):
         input, offset, weight, bias = ctx.saved_tensors
         grad_input, grad_offset, grad_weight, grad_bias = \
-            DCN.deform_conv_backward(input, weight,
+            D3D.deform_conv_backward(input, weight,
                                      bias,
                                      offset,
                                      grad_output,
