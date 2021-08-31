@@ -44,7 +44,7 @@ def get_extensions():
     include_dirs = [extensions_dir]
     ext_modules = [
         extension(
-            "DCN",
+            "D3D",
             sources,
             include_dirs=include_dirs,
             define_macros=define_macros,
