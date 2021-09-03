@@ -17,7 +17,7 @@ class Net(nn.Module):
         )
 
         self.residual_layer = self.make_layer(functools.partial(ResBlock_3d, nf), 5)
-        self.TA = nn.Conv2d(7 * nf, nf, 1, 1, bias=True)
+        self.bottleneck = nn.Conv2d(7 * nf, nf, 1, 1, bias=True)
         ### reconstruct
         self.reconstruct = self.make_layer(functools.partial(ResBlock, nf), 6)
         ###upscale
@@ -45,7 +45,7 @@ class Net(nn.Module):
                                  align_corners=False)
         out = self.input(x)
         out = self.residual_layer(out)
-        out = self.TA(out.permute(0,2,1,3,4).contiguous().view(b, -1, h, w))  # B, C, H, W
+        out = self.bottleneck(out.permute(0,2,1,3,4).contiguous().view(b, -1, h, w))  # B, C, H, W
         out = self.reconstruct(out)
         ###upscale
         out = self.upscale(out)
