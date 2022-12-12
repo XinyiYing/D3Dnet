@@ -6,10 +6,10 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 ## Overview
 
 ### Architecture of D3Dnet
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/Network.jpg" width="550"/><br>
+<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/Network.jpg" width="512"/><br>
 
 ### Architecture of D3D
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/D3D.jpg" width="1100"/><br>
+<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/D3D.jpg" width="1024"/><br>
 
 ## Requirements
 - Python 3
@@ -71,21 +71,15 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 ## Results
 
 ### Quantitative Results
-Table 1. PSNR/SSIM achieved by different methods.
 
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table1.JPG" width="1100" />
+<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/table1.JPG" width="1024" />
 
-Table 2. Temporal consistency and computational efficiency achieved by different methods.
-
-<img src="https://github.com/XinyiYing/D3Dnet/blob/master/images/table2.JPG" width="550"/>
+<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/table2.JPG" width="550"/>
 
 We have organized the Matlab code framework of Video Quality Assessment metric T-MOVIE and MOVIE. [<a href="https://github.com/XinyiYing/MOVIE">Code</a>] <br> Welcome to have a look and use our code.
 
 ### Qualitative Results
-<img src=https://github.com/XinyiYing/D3Dnet/blob/master/images/compare.jpg>
-
-Qualitative results achieved by different methods. Blue boxes represent the temporal profiles among different frames.
-
+<img src=https://raw.github.com/XinyiYing/D3Dnet/master/images/compare.jpg>
 
 A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dnet.mp4
 
