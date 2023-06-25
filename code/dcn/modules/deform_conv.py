@@ -145,8 +145,7 @@ class DeformConv_d(nn.Module):
         dimension_W = 'W' in self.dimension
         b, c, t, h, w = temp.shape
         if self.length == 2:
-            temp1 = temp.clone()[:, 0:81 - c, :, :, :]
-            offset = torch.cat((temp.clone(), temp1), dim=1)
+            offset = temp.new_zeros(b, 3 * self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2], t, h, w)
             if dimension_T == False:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
@@ -167,8 +166,7 @@ class DeformConv_d(nn.Module):
                     offset[:, i * 3 + 2, :, :, :] = 0  # W
 
         if self.length == 1:
-            temp1 = temp.clone()
-            offset = torch.cat((temp.clone(), temp1, temp1), dim=1)
+            offset = temp.new_zeros(b, 3 * self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2], t, h, w)
             if dimension_T == True:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
@@ -233,8 +231,7 @@ class DeformConvPack_d(DeformConv_d):
         dimension_W = 'W' in self.dimension
         b, c, t, h, w = temp.shape
         if self.length == 2:
-            temp1 = temp.clone()[:, 0:81 - c, :, :, :]
-            offset = torch.cat((temp.clone(), temp1), dim=1)
+            offset = temp.new_zeros(b, 3 * self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2], t, h, w)
             if dimension_T == False:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
@@ -255,8 +252,7 @@ class DeformConvPack_d(DeformConv_d):
                     offset[:, i * 3 + 2, :, :, :] = 0  # W
 
         if self.length == 1:
-            temp1 = temp.clone()
-            offset = torch.cat((temp.clone(), temp1, temp1), dim=1)
+            offset = temp.new_zeros(b, 3 * self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2], t, h, w)
             if dimension_T == True:
                 for i in range(
                         self.deformable_groups * self.kernel_size[0] * self.kernel_size[1] * self.kernel_size[2]):
