@@ -21,7 +21,7 @@ Our code is based on cuda and can perform deformation in any dimension of 3D con
 ***Compile deformable 3D convolution***: <br>
 1. Cd to ```code/dcn```.
 2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build D3D automatically and create some folders.
-3. See `test.py` for example usage.
+3. We offer customized settings for any dimension (e.g., Temporal, Height, Width) you want to deform. See D3Dnet/code/dcn/test.py for more details.
 
 ## Datasets
 
