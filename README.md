@@ -85,13 +85,12 @@ A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dn
 
 ## Citiation
 ```
-@article{D3Dnet,
-  author = {Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
-  title = {Deformable 3D Convolution for Video Super-Resolution},
-  journal = {IEEE Signal Processing Letters},
-  volume = {27},
-  pages = {1500-1504}，
-  year = {2020},
+@article{RGBT-Tiny,
+ journal = {arXiv preprint arXiv:2406.14482},
+ author = {Xinyi Ying and Chao Xiao and Ruojing Li and Xu He and Boyang Li and Zhaoxu Li and Yingqian Wang and Mingyuan Hu and Qingyu Xu and Zaiping Lin and Miao Li and Shilin Zhou and Wei An and Weidong Sheng and Li Liu},
+ title = {Visible-Thermal Tiny Object Detection: A Benchmark Dataset and Baselines},
+ year = {2024},
+ month = {6},
 }
 ```
 
